@@ -1,0 +1,125 @@
+/* Руководство по стилю «Чудо Обувь» (Приложение 3):
+   шрифт Calibri; основной фон #FFFFFF; дополнительный фон #D2F6E7;
+   акцент (целевое действие) #70B2AF; товары с остатком <= 3 — #ff8080 */
+
+QWidget {
+    font-family: "Calibri";
+    font-size: 15px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+QFrame#headerBar {
+    background-color: #D2F6E7;
+    border-bottom: 2px solid #70B2AF;
+}
+QFrame#headerBar QLabel {
+    background-color: transparent;
+}
+QLabel#pageTitle {
+    font-size: 22px;
+    font-weight: bold;
+}
+QLabel#userName {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+QFrame#toolBar {
+    background-color: #D2F6E7;
+    border-radius: 6px;
+}
+QFrame#toolBar QLabel {
+    background-color: transparent;
+}
+
+QPushButton {
+    background-color: #70B2AF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 16px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #5E9C99;
+}
+QPushButton:disabled {
+    background-color: #B9D9D7;
+}
+/* Второстепенные действия: «Назад», «Отмена», «Выйти» */
+QPushButton[secondary="true"] {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #70B2AF;
+}
+QPushButton[secondary="true"]:hover {
+    background-color: #D2F6E7;
+}
+
+QLineEdit, QComboBox, QSpinBox, QDateEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #70B2AF;
+    border-radius: 4px;
+    padding: 5px 8px;
+    min-height: 22px;
+}
+QLineEdit:focus, QComboBox:focus, QSpinBox:focus, QDateEdit:focus {
+    border: 2px solid #70B2AF;
+}
+
+QScrollArea {
+    border: none;
+}
+
+/* Карточка товара по макету */
+QFrame#productCard {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+QFrame#productCard[lowStock="true"] {
+    background-color: #ff8080;
+}
+QFrame#productCard QLabel {
+    background-color: transparent;
+}
+QLabel#cardTitle {
+    font-size: 18px;
+}
+QLabel#cardPrice {
+    font-size: 26px;
+}
+QLabel#oldPrice {
+    font-size: 15px;
+    color: #555555;
+}
+QLabel#cardSmall {
+    font-size: 13px;
+}
+
+QLabel#sectionTitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+QLabel#hint {
+    color: #555555;
+    font-size: 13px;
+}
+QLabel#totalLabel {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+QTableWidget {
+    gridline-color: #D2F6E7;
+    border: 1px solid #70B2AF;
+    selection-background-color: #70B2AF;
+    selection-color: #FFFFFF;
+}
+QHeaderView::section {
+    background-color: #D2F6E7;
+    font-weight: bold;
+    padding: 6px;
+    border: none;
+    border-right: 1px solid #FFFFFF;
+}
