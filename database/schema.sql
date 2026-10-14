@@ -7,15 +7,15 @@
 
 -- Удаляем в обратном порядке зависимостей, чтобы скрипт можно было
 -- выполнять повторно.
-DROP TABLE IF EXISTS order_items;
-DROP TABLE IF EXISTS orders;
-DROP TABLE IF EXISTS stock_items;
-DROP TABLE IF EXISTS products;
-DROP TABLE IF EXISTS sizes;
-DROP TABLE IF EXISTS manufacturers;
-DROP TABLE IF EXISTS categories;
-DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS roles;
+DROP TABLE IF EXISTS order_items CASCADE;
+DROP TABLE IF EXISTS orders CASCADE;
+DROP TABLE IF EXISTS stock_items CASCADE;
+DROP TABLE IF EXISTS products CASCADE;
+DROP TABLE IF EXISTS sizes CASCADE;
+DROP TABLE IF EXISTS manufacturers CASCADE;
+DROP TABLE IF EXISTS categories CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+DROP TABLE IF EXISTS roles CASCADE;
 
 -- ===== Справочники =====
 
