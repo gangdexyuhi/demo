@@ -68,8 +68,8 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Сборка исполняемого файла (Windows): запустите `build_exe.bat` — готовый
-`ChudoObuv.exe` появится в папке `dist`. Для работы ему нужен запущенный
+Сборка исполняемого файла: Windows — `build_exe.bat` (`dist\ChudoObuv.exe`),
+Linux — `sh build_exe.sh` (`dist/ChudoObuv`). Для работы ему нужен запущенный
 PostgreSQL с базой `chudo_obuv`.
 
 ## Структура проекта
